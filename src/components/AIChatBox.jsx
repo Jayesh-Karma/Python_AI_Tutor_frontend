@@ -33,7 +33,7 @@ const AIChatBox = ({ tutor }) => {
   };
 
   return (
-    <div className="relative bg-white shadow-xl rounded-lg w-full h-full flex flex-col p-4">
+    <div className="relative bg-white shadow-xl rounded-lg w-full h-[100%] flex flex-col p-4">
       {/* Tutor Profile Section */}
       <div className="flex items-center gap-4 p-2 border-b">
         <img src={tutor?.link || "/default-avatar.png"} alt="Tutor" className="w-12 h-12 rounded-full border" />
