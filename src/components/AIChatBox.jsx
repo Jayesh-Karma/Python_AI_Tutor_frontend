@@ -44,7 +44,7 @@ const AIChatBox = ({ tutor }) => {
       </div>
 
       {/* Chat Messages */}
-      <div className="flex-1 overflow-y-auto mt-2 border p-2 rounded bg-gray-50 h-60">
+      <div className="flex-1 overflow-auto mt-2 border p-2 rounded bg-gray-50 h-60">
         {messages.map((msg, index) => (
           <div key={index} className={`p-2 my-1 rounded ${msg.role === "ai" ? "bg-gray-200 text-gray-900" : "bg-blue-100 text-blue-900"}`}>
             <ReactMarkdown>{msg.content}</ReactMarkdown>
