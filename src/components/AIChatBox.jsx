@@ -33,7 +33,7 @@ const AIChatBox = ({ tutor }) => {
   };
 
   return (
-    <div className="relative bg-white shadow-xl rounded-lg w-full h-[100%] flex flex-col p-4">
+    <div className="relative bg-white shadow-xl rounded-lg w-full h-[100vh] flex flex-col p-4">
       {/* Tutor Profile Section */}
       <div className="flex items-center gap-4 p-2 border-b">
         <img src={tutor?.link || "/default-avatar.png"} alt="Tutor" className="w-12 h-12 rounded-full border" />
@@ -44,9 +44,9 @@ const AIChatBox = ({ tutor }) => {
       </div>
 
       {/* Chat Messages */}
-      <div className="flex-1 overflow-auto mt-2 border p-2 rounded bg-gray-50 h-60">
+      <div className="flex-1 mt-2 border p-2 rounded bg-gray-50 h-50 overflow-x-auto">
         {messages.map((msg, index) => (
-          <div key={index} className={`p-2 my-1 rounded ${msg.role === "ai" ? "bg-gray-200 text-gray-900" : "bg-blue-100 text-blue-900"}`}>
+          <div key={index}  className={`p-2 my-1 rounded overflow-y-hidden ${msg.role === "ai" ? "bg-gray-200 text-gray-900" : "bg-blue-100 text-blue-900"}`}>
             <ReactMarkdown>{msg.content}</ReactMarkdown>
           </div>
         ))}
