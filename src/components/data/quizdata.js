@@ -1,0 +1,67 @@
+export const questionBank = {
+    python_basics: [
+      { question: "What is the correct way to declare a function in Python?", options: ["function()", "def myFunction():", "define myFunction()", "func myFunction()"], answer: "def myFunction():" },
+      { question: "What is the output of print(2**3)?", options: ["5", "6", "8", "9"], answer: "8" },
+      { question: "Which of the following is used for multi-line comments in Python?", options: ["//", "/* */", "#", '""" """'], answer: '""" """' },
+      { question: "How do you create a variable in Python?", options: ["variable x", "x = 10", "var x = 10", "int x = 10"], answer: "x = 10" },
+      { question: "Which of the following is a correct list initialization in Python?", options: ["[]", "{}", "()", "list()"], answer: "[]" },
+      { question: "What does 'len()' function do in Python?", options: ["Returns the length of an object", "Converts a number to a string", "Checks if a number is even", "None of the above"], answer: "Returns the length of an object" },
+      { question: "What will be the output of print(type(3.14))?", options: ["<class 'int'>", "<class 'float'>", "<class 'str'>", "<class 'list'>"], answer: "<class 'float'>" },
+      { question: "Which of the following is the correct way to import a module?", options: ["import module_name", "import module_name as mn", "from module_name import *", "all of the above"], answer: "all of the above" },
+      { question: "Which function is used to get the user input in Python?", options: ["input()", "get_input()", "scanf()", "read()"], answer: "input()" },
+      { question: "How do you write a Python script?", options: [".py", ".txt", ".exe", ".html"], answer: ".py" },
+    ],
+    
+    oop: [
+      { question: "What is Encapsulation in OOP?", options: ["Hiding data", "Inheritance", "Polymorphism", "Abstraction"], answer: "Hiding data" },
+      { question: "What is the purpose of the 'self' keyword in Python?", options: ["Refers to the instance of the class", "Refers to the class itself", "Refers to the global namespace", "None of the above"], answer: "Refers to the instance of the class" },
+      { question: "Which keyword is used to inherit a class in Python?", options: ["inherit", "extends", "super", "class"], answer: "class ChildClass(ParentClass):" },
+      { question: "What is Polymorphism in OOP?", options: ["Multiple methods with the same name but different implementations", "Hiding data", "Object methods with the same arguments", "A class that can inherit from multiple classes"], answer: "Multiple methods with the same name but different implementations" },
+      { question: "What is an abstract class?", options: ["A class that can be instantiated", "A class that contains only abstract methods", "A class that cannot be instantiated", "A class that is defined inside another class"], answer: "A class that cannot be instantiated" },
+      { question: "What is the main purpose of inheritance?", options: ["To allow a class to inherit methods and properties from another class", "To create a class with no properties", "To override the methods of a base class", "To prevent access to variables"], answer: "To allow a class to inherit methods and properties from another class" },
+      { question: "Which of the following is used to create an object in Python?", options: ["class()","new()","create()","object()"], answer: "object()" },
+      { question: "Which of the following is NOT a feature of object-oriented programming?", options: ["Abstraction", "Encapsulation", "Inheritance", "Iteration"], answer: "Iteration" },
+      { question: "In Python, how do you define a class?", options: ["class ClassName:", "define ClassName:", "create ClassName:", "class = ClassName"], answer: "class ClassName:" },
+      { question: "Which of the following is true about multiple inheritance in Python?", options: ["A child class can inherit from multiple parent classes", "Python does not support multiple inheritance", "Multiple inheritance is only possible in Java", "A child class can only inherit from one parent class"], answer: "A child class can inherit from multiple parent classes" },
+    ],
+    
+    data_structures: [
+      { question: "Which data structure uses FIFO?", options: ["Stack", "Queue", "Heap", "Tree"], answer: "Queue" },
+      { question: "Which sorting algorithm has the best average-case performance?", options: ["Bubble Sort", "Quick Sort", "Insertion Sort", "Selection Sort"], answer: "Quick Sort" },
+      { question: "What data structure is used for LIFO behavior?", options: ["Stack", "Queue", "Heap", "Tree"], answer: "Stack" },
+      { question: "Which of the following is the correct way to initialize a list in Python?", options: ["list = {}", "list = []", "list = ()", "list = set()"], answer: "list = []" },
+      { question: "What is the output of print(5 in [1, 2, 3, 4, 5])?", options: ["True", "False", "Error", "None"], answer: "True" },
+      { question: "Which data structure does Python's 'dict' use internally?", options: ["List", "Hash Table", "Stack", "Heap"], answer: "Hash Table" },
+      { question: "What method is used to add an element to the end of a list in Python?", options: ["append()", "insert()", "add()", "extend()"], answer: "append()" },
+      { question: "What is the time complexity of accessing an element in a dictionary by key?", options: ["O(1)", "O(log n)", "O(n)", "O(n^2)"], answer: "O(1)" },
+      { question: "Which data structure does a set use?", options: ["List", "Hash Table", "Array", "Tree"], answer: "Hash Table" },
+      { question: "Which method is used to remove an element from a set in Python?", options: ["pop()", "remove()", "delete()", "clear()"], answer: "remove()" },
+    ],
+    
+    python_advanced: [
+      { question: "What is a lambda function in Python?", options: ["A function defined with the keyword lambda", "A recursive function", "A function that is only valid inside another function", "None of the above"], answer: "A function defined with the keyword lambda" },
+      { question: "What does the 'yield' keyword do in Python?", options: ["Returns a value and ends the function", "Returns a value and suspends the function", "Creates an infinite loop", "None of the above"], answer: "Returns a value and suspends the function" },
+      { question: "What is the purpose of a decorator in Python?", options: ["To add functionality to an existing function", "To create a class", "To define a generator function", "To handle exceptions"], answer: "To add functionality to an existing function" },
+      { question: "What is the purpose of the 'with' statement in Python?", options: ["To define a function", "To handle exceptions", "To open files safely", "To create a context manager"], answer: "To open files safely" },
+      { question: "What is a generator in Python?", options: ["A special type of function that returns an iterator", "A function that can return multiple values", "A data structure that stores sequences", "None of the above"], answer: "A special type of function that returns an iterator" },
+      { question: "Which of the following methods can be used to handle exceptions in Python?", options: ["try/except", "try/catch", "throw/catch", "throw/except"], answer: "try/except" },
+      { question: "What is the difference between 'deepcopy' and 'copy' in Python?", options: ["'deepcopy' copies nested objects, 'copy' does not", "'copy' copies nested objects, 'deepcopy' does not", "'deepcopy' is faster", "'copy' works with functions"], answer: "'deepcopy' copies nested objects, 'copy' does not" },
+      { question: "What is the main benefit of using a generator expression in Python?", options: ["Memory efficiency", "Faster execution", "Easier syntax", "All of the above"], answer: "Memory efficiency" },
+      { question: "What is the output of the following code snippet: `print(2 ** 3 ** 2)`?", options: ["512", "256", "64", "128"], answer: "512" },
+      { question: "What does the 'assert' keyword do in Python?", options: ["Tests a condition, raises an exception if false", "Tests a condition, raises an exception if true", "Defines an anonymous function", "None of the above"], answer: "Tests a condition, raises an exception if false" },
+    ],
+  
+    python_modules: [
+      { question: "Which module is used to work with dates and times in Python?", options: ["datetime", "time", "calendar", "date"], answer: "datetime" },
+      { question: "Which module in Python is used for working with regular expressions?", options: ["re", "regex", "patterns", "search"], answer: "re" },
+      { question: "What module is used to handle JSON data in Python?", options: ["json", "pickle", "yaml", "xml"], answer: "json" },
+      { question: "Which module is used to handle files and directories in Python?", options: ["os", "file", "sys", "shutil"], answer: "os" },
+      { question: "Which module is used for unit testing in Python?", options: ["unittest", "test", "pytest", "nose"], answer: "unittest" },
+      { question: "Which module is used to handle HTTP requests in Python?", options: ["http", "requests", "urllib", "socket"], answer: "requests" },
+      { question: "Which module is used to create and manage threads in Python?", options: ["threading", "multiprocessing", "asyncio", "os"], answer: "threading" },
+      { question: "Which module is used for mathematical operations in Python?", options: ["math", "numpy", "statistics", "mathlib"], answer: "math" },
+      { question: "Which module provides tools for working with random numbers in Python?", options: ["random", "rand", "faker", "choice"], answer: "random" },
+      { question: "Which module is used for debugging in Python?", options: ["pdb", "debug", "trace", "logging"], answer: "pdb" },
+    ],
+  };
+  
